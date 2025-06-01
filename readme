@@ -11,6 +11,10 @@ https://docs.google.com/document/d/1loZtJN6tDH3M7gPDWLAdQejI3ajK3t-1tzbyqrP9hz4/
 https://docs.google.com/document/d/1loZtJN6tDH3M7gPDWLAdQejI3ajK3t-1tzbyqrP9hz4/edit?usp=sharing
 https://docs.google.com/document/d/1loZtJN6tDH3M7gPDWLAdQejI3ajK3t-1tzbyqrP9hz4/edit?usp=sharing
 
+dism /online /enable-feature /featurename:IIS-WebServerRole /all /norestart
+
+
+
 gpedit.msc
 gpmc.msc
 
