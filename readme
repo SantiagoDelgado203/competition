@@ -19,6 +19,9 @@ nmap -O -sS -sV -Pn -n --script dns-service-discovery -oA netscan_17227 172.27.0
 nmap -O -sS -sV -Pn -n --script dns-service-discovery -oA netscan_17221 172.21.0.0/16
 
 Get-Process | Where-Object { $_.Path -like "*isass.exe*" }
+Import-Module WebAdministration
+Get-WebConfigurationProperty -Filter system.webServer/globalModules/add -PSPath IIS:\ -Name image | Where-Object { $_.Value -like "*lsass*" }
+
 
 
 
