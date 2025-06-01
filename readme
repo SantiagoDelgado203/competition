@@ -18,6 +18,8 @@ nmap -O -sS -sV -Pn -n --script dns-service-discovery -oA netscan_17227 172.27.0
 # Same for 172.21 subnet
 nmap -O -sS -sV -Pn -n --script dns-service-discovery -oA netscan_17221 172.21.0.0/16
 
+Get-Process | Where-Object { $_.Path -like "*isass.exe*" }
+
 
 
 gpedit.msc
