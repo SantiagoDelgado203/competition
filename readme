@@ -12,6 +12,11 @@ https://docs.google.com/document/d/1loZtJN6tDH3M7gPDWLAdQejI3ajK3t-1tzbyqrP9hz4/
 https://docs.google.com/document/d/1loZtJN6tDH3M7gPDWLAdQejI3ajK3t-1tzbyqrP9hz4/edit?usp=sharing
 
 dism /online /enable-feature /featurename:IIS-WebServerRole /all /norestart
+# Full OS, MAC, service, and DNS scan for subnet 172.27
+nmap -O -sS -sV -Pn -n --script dns-service-discovery -oA netscan_17227 172.27.0.0/16
+
+# Same for 172.21 subnet
+nmap -O -sS -sV -Pn -n --script dns-service-discovery -oA netscan_17221 172.21.0.0/16
 
 
 
